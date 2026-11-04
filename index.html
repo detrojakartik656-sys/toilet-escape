@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>Toilet Escape</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071690168957376"
+     crossorigin="anonymous"></script>
 <style>
 :root{--bg:#d9f3ff;--ink:#12324a;--btn:#ffffffcc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e2233;--ink:#e8f6ff;--btn:#ffffffdd}}
@@ -11,7 +13,7 @@
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
 html,body{height:100%;margin:0;overflow:hidden;overscroll-behavior:none;touch-action:none;background:var(--bg);color:var(--ink);font-family:"Trebuchet MS","Comic Sans MS",system-ui,sans-serif}
 body{position:fixed;inset:0;display:flex;flex-direction:column}
-.ad{flex:0 0 auto;width:100%;max-width:728px;height:60px;margin:0 auto}
+.ad{overflow:hidden;flex:0 0 auto;width:100%;max-width:728px;height:60px;margin:0 auto}
 @media (min-width:700px) and (min-height:760px){.ad{height:90px}}
 #stage{flex:1 1 auto;min-height:0;display:flex;align-items:center;justify-content:center}
 #frame{position:relative}
@@ -21,10 +23,14 @@ canvas{display:block;border-radius:22px;touch-action:none;box-shadow:0 6px 0 #0a
 </head>
 <body>
 <!-- Ad slot (top): place a Google AdSense responsive unit here later -->
-<div class="ad" id="adTop"></div>
+<div class="ad" id="adTop"><ins class="adsbygoogle" style="display:block;width:100%;height:100%" data-ad-client="ca-pub-9071690168957376" data-ad-slot="TOP_AD_SLOT_ID"></ins></div>
 <div id="stage"><div id="frame"><canvas id="c" aria-label="Toilet Escape game"></canvas><button id="mute" aria-label="Mute sound">🔊</button></div></div>
 <!-- Ad slot (bottom): place a Google AdSense responsive unit here later -->
-<div class="ad" id="adBottom"></div>
+<div class="ad" id="adBottom"><ins class="adsbygoogle" style="display:block;width:100%;height:100%" data-ad-client="ca-pub-9071690168957376" data-ad-slot="BOTTOM_AD_SLOT_ID"></ins></div>
+<script>
+// Ads load only after TOP_AD_SLOT_ID / BOTTOM_AD_SLOT_ID are replaced with real AdSense slot numbers.
+(function(){try{var u=document.querySelectorAll("ins.adsbygoogle");for(var i=0;i<u.length;i++){if(/^\d+$/.test(u[i].getAttribute("data-ad-slot")||"")){(window.adsbygoogle=window.adsbygoogle||[]).push({})}}}catch(e){}})();
+</script>
 <script>
 (function(){
 "use strict";
